@@ -1,0 +1,28 @@
+
+
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Auto-adjust grid items */
+  gap: 16px;
+  padding: 10px;
+}
+
+/* Grid item */
+.grid-item {
+  background-color: #f0f0f0;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+  text-align: center; /* Center text inside grid item */
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pagination__selected{
+  background-color: rgb(112, 167, 216);
+}
