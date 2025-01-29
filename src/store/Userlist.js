@@ -2,8 +2,8 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 export const fetchdata = createAsyncThunk(
   '/userdetails/fetchdata',
-  async (searchdata) => {
-    const response = await fetch(`https://jsonplaceholder.typicode.com/todos?searchdata=${searchdata}`);
+  async () => {
+    const response = await fetch(`https://jsonplaceholder.typicode.com/todos`);
     const data = await response.json();
     console.log('-----')
     return data;
