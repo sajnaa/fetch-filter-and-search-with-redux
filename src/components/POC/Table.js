@@ -91,13 +91,13 @@ export default function Table() {
         </div>
       )}
 <div>
-{/* {
+{
 <div>
 <span onClick={()=>dispatch(pagination(page-1))}>+</span>
 
 {[...Array(user.length/10)].map((_,i)=>{
   return(
-    <span key={i} className={page===i ? "pagination__selected":""}onClick={()=>dispatch(pagination(i+1))}>
+    <span key={i} className={page===i+1 ? "pagination__selected":""}onClick={()=>dispatch(pagination(i+1))}>
       {i+1}
     </span>
   )
@@ -107,8 +107,8 @@ export default function Table() {
 
 </div>
  
-            } */}
-       {
+            }
+       {/* {
                 user.length > 0 && (
                     <div className="pagination">
                         <span onClick={()=>dispatch(pagination(page-1))}>◀</span>
@@ -123,7 +123,7 @@ export default function Table() {
                         <span onClick={()=>dispatch(pagination(page+1))}>▶</span>
                     </div>
                 )
-            }
+            } */}
 </div>
 
     </div>
